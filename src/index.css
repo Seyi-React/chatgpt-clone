@@ -21,7 +21,8 @@
 }
 .top-channel span {
   letter-spacing: 1px;
-  font-size: 20px;
+  font-size: 18px;
+  font-weight: bold;
 }
 .top-bottom {
   padding: 2.5rem;
@@ -54,8 +55,21 @@
 .sidebar {
   flex: 1;
   box-shadow: 0px 0px 2px rgb(0, 0, 0.2);
+ 
+}
+.upperside {
+  height: 60%;
 }
 
 .main {
   flex: 9;
+}
+.lower {
+  padding: 2rem;
+  border-top: 1px solid grey;
+  font-size: 17px;
+}
+.lower div {
+  margin: 15px 0;
+   cursor: pointer;
 }
