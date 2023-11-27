@@ -143,8 +143,8 @@ const App = () => {
           </div>
           <div className="chat-footer">
             <div className="input">
-              <input type="text" name="" id="" />
-              <IoSendSharp />
+              <input type="text" name="" id="" placeholder="Send Message" />
+              <IoSendSharp  size={27} style={{cursor:'pointer'}}/>
             </div>
           </div>
         </div>

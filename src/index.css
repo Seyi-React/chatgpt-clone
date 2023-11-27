@@ -63,13 +63,51 @@
 
 .main {
   flex: 9;
+  min-height: calc(100vh -14rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 6rem 10rem;
 }
 .lower {
   padding: 2rem;
   border-top: 1px solid grey;
   font-size: 17px;
+  letter-spacing: 1px;
 }
 .lower div {
   margin: 15px 0;
    cursor: pointer;
+}
+.chat-footer {
+  margin-top: auto;
+  background-color:rgb(216, 208, 208);
+  width: 80%;
+  height: 48px;
+}
+.input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+ 
+}
+.chat {
+  margin: 20px 0;
+  padding: 1.5rem;
+}
+.input input {
+  height: 48px;
+  width: 90%;
+  outline: none;
+  border: none;
+  background: transparent;
+  padding: 10px;
+}
+.chats {
+    overflow: hidden;
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+    width: 100%;
+    max-width:70rem;
 }
