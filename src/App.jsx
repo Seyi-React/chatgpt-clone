@@ -110,7 +110,15 @@ const App = () => {
         {/* main */}
         <div className="main">
           <div className="chats">
-            <div className="chat">
+            <div
+              className="chat"
+              style={{
+                display: "flex",
+                justifyContent: "flex-start",
+                alignContent: "center",
+                gap: "1.4rem",
+              }}
+            >
               <img
                 src={baby}
                 alt=""
@@ -125,7 +133,15 @@ const App = () => {
                 exercitationem repellat eos.
               </p>
             </div>
-            <div className="chat">
+            <div
+              className="chat bot"
+              style={{
+                display: "flex",
+                justifyContent: "flex-start",
+                alignContent: "center",
+                gap: "1.4rem",
+              }}
+            >
               <img
                 src={doctor}
                 alt=""
@@ -134,19 +150,30 @@ const App = () => {
                 style={{ borderRadius: "50%" }}
               />
               <p className="text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-                quaerat saepe repudiandae, doloribus possimus deleniti fuga
-                similique beatae amet, asperiores laborum explicabo
-                exercitationem repellat eos.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Molestiae vitae vel est, incidunt odio quas ducimus mollitia cum
+                quo quae iure sequi, culpa a cupiditate quasi. Libero voluptatum
+                dolorem est iste veritatis. Tempora, excepturi sed. Sunt laborum
+                assumenda culpa perspiciatis, dolorem dolores dolore atque nam
+                iusto? Ducimus, ratione excepturi! Minus sit neque, quis
+                possimus, voluptatem ratione placeat inventore necessitatibus
+                accusamus labore expedita dolorum quibusdam molestias dicta
+                sapiente et ipsam exercitationem tempore reprehenderit enim!
+                Commodi harum culpa consequuntur autem mollitia, rem
+                consectetur, ab veniam cum tempore blanditiis necessitatibus
+                facere nobis quisquam vel. Sapiente fugiat eligendi natus
+                pariatur ipsa assumenda accusamus consequuntur.
               </p>
             </div>
           </div>
           <div className="chat-footer">
             <div className="input">
               <input type="text" name="" id="" placeholder="Send Message" />
-              <IoSendSharp  size={27} style={{cursor:'pointer'}}/>
+              <IoSendSharp size={24} style={{ cursor: "pointer" }} color="grey" />
             </div>
+            <p className="gpt">ChatGPT can make mistakes. Consider checking important information</p>
           </div>
+        
         </div>
       </div>
     </>
