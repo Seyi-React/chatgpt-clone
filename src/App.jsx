@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import chat from "./assets/download.png";
 import { FaPlus } from "react-icons/fa";
 import { BsChatRight } from "react-icons/bs";
@@ -8,8 +8,15 @@ import { IoRocketSharp } from "react-icons/io5";
 import { IoSendSharp } from "react-icons/io5";
 import baby from "./assets/baby.webp";
 import doctor from "./assets/doctor.jpeg";
+// import { sendMessage } from "./openai";
 
 const App = () => {
+  // const [message, setMessage] = useState("");
+
+  // const Send = async () => {
+  //   const res = await sendMessage(message);
+  //   console.log(res);
+  // };
   return (
     <>
       <div className="app">
@@ -168,12 +175,27 @@ const App = () => {
           </div>
           <div className="chat-footer">
             <div className="input">
-              <input type="text" name="" id="" placeholder="Send Message" />
-              <IoSendSharp size={24} style={{ cursor: "pointer" }} color="grey" />
+              <input
+                type="text"
+                name=""
+                id=""
+                placeholder="Send Message"
+                // value={message}
+                // onChange={(e) => {
+                //   setMessage(e.target.value);
+                // }}
+              />
+              <IoSendSharp
+                size={24}
+                style={{ cursor: "pointer" }}
+                color="grey"
+                // onClick={Send}
+              />
             </div>
-            <p className="gpt">ChatGPT can make mistakes. Consider checking important information</p>
+            <p className="gpt">
+              ChatGPT can make mistakes. Consider checking important information
+            </p>
           </div>
-        
         </div>
       </div>
     </>
